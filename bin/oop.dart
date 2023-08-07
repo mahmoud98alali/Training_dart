@@ -4,19 +4,17 @@ void main(List<String> arguments) {
   Cat kitty =Cat();
   Dog jack =Dog();
 
-  //Polymorphism
+
 
 List<Animals> zooAnimals = [scar,kitty,jack];
 }
-
-class Animals {
+//abstract class
+abstract class Animals {
   // int age;
   // String name;
   // Animal(this.age,this.name);
 
-  void eat (){
-    print("Eating");
-  }
+  void eat ();
 }
 
 class Cat extends Animals {
@@ -30,12 +28,20 @@ void eat (){
 }
 
 class Dog extends Animals {
+  @override
+  void eat() {
+    // TODO: implement eat
+  }
   // Dog(super.age, super.name);
 // Cat(int a,String b) : super(a,b);
 
 }
 
 class Lion extends Animals {
+  @override
+  void eat() {
+    // TODO: implement eat
+  }
   // Lion(super.age, super.name);
 // Cat(int a,String b) : super(a,b);
 
