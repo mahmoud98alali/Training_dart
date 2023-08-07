@@ -1,20 +1,26 @@
 
 void main(List<String> arguments) {
+  Lion scar =Lion();
+  Cat kitty =Cat();
+  Dog jack =Dog();
 
+  //Polymorphism
+
+List<Animals> zooAnimals = [scar,kitty,jack];
 }
 
-class Animal {
-  int age;
-  String name;
-  Animal(this.age,this.name);
+class Animals {
+  // int age;
+  // String name;
+  // Animal(this.age,this.name);
 
   void eat (){
     print("Eating");
   }
 }
 
-class Cat extends Animal {
-  Cat(super.age, super.name);
+class Cat extends Animals {
+  // Cat(super.age, super.name);
 // Cat(int a,String b) : super(a,b);
 
 @override
@@ -23,14 +29,14 @@ void eat (){
 }
 }
 
-class Dog extends Animal {
-  Dog(super.age, super.name);
+class Dog extends Animals {
+  // Dog(super.age, super.name);
 // Cat(int a,String b) : super(a,b);
 
 }
 
-class Mouse extends Animal {
-  Mouse(super.age, super.name);
+class Lion extends Animals {
+  // Lion(super.age, super.name);
 // Cat(int a,String b) : super(a,b);
 
 }
